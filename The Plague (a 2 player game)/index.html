@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plague</title>
+    <style>
+      body {
+         margin-top: 50px;
+         text-align: center;
+         background-color: #fff;
+         transition: 1s;
+         font-family: sans-serif;
+      }
+      #menu {
+         position: relative;
+         top: -426px;
+         width: 50px;
+         height: 40px;
+         background: none;
+         border-radius: 2px;
+         outline: none;
+         margin: none;
+         transition: inherit;
+         border-color: #eee;
+         z-index: 1;
+      }
+      #menuDiv {
+         position: fixed;
+         top: 14%;
+         left: 20%;
+         background-color: inherit;
+         padding: 2px;
+         padding-bottom: 0px;
+         margin: none;
+         border-color: #222;
+         border-style: ridge;
+         border-width: 1px;
+         font-weight: lighter;
+         /* transform: translate(10%,10%); */
+      }
+      .colorButtons {
+         width: 70px;
+         height: 50px;
+         outline: none;
+         border: none;
+      }
+      .colorButtons:hover {
+         /* outline-style: groove;
+         outline-width: thin;
+         outline-color: ; */
+         padding-bottom: 3px;
+      }
+      #l1c1 {
+         background-color: rgba(70,70,200,0.8);
+      }
+      #l1c2 {
+         background-color: rgba(200,70,70,0.8);
+      }
+      #l1c3 {
+         background-color: rgba(70,200,70,0.8);
+      }
+      #l1c4 {
+         background-color: rgba(250,255,0,0.8);
+      }
+      #l2c1 {
+         background-color: rgba(70,70,200,0.8);
+      }
+      #l2c2 {
+         background-color: rgba(200,70,70,0.8);
+      }
+      #l2c3 {
+         background-color: rgba(70,200,70,0.8);
+      }
+      #l2c4 {
+         background-color: rgba(250,255,0,0.8);
+      }
+      #l3c1 {
+         background-color: rgba(70,70,200,0.8);
+      }
+      #l3c2 {
+         background-color: rgba(200,70,70,0.8);
+      }
+      #l3c3 {
+         background-color: rgba(70,200,70,0.8);
+      }
+      #l3c4 {
+         background-color: rgba(250,255,0,0.8);
+      }
+   </style>
+    <script src="libraries/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="players.js"></script>
+    <script src="elementals.js"></script>
+    <script src="colision.js"></script>
+    <script src="enemiesGeneration.js"></script>
+  </head>
+  <body>
+     <button id="menu" type="button" name="button" onclick="showMenu()">Menu</button>
+     <div style="visibility: hidden;" id="menuDiv">
+        <p>Player 1 color</p>
+        <button style="padding-bottom: 4px;" id="l1c1" class="colorButtons" type="button" name="button" onclick="buttonL1('1')"></button>
+        <button id="l1c2" class="colorButtons" type="button" name="button" onclick="buttonL1('2')"></button>
+        <button id="l1c3" class="colorButtons" type="button" name="button" onclick="buttonL1('3')"></button>
+        <button id="l1c4" class="colorButtons" type="button" name="button" onclick="buttonL1('4')"></button><br>
+        <p>Player 2 color</p>
+        <button id="l2c1" class="colorButtons" type="button" name="button" onclick="buttonL2('1')"></button>
+        <button style="padding-bottom: 4px;" id="l2c2" class="colorButtons" type="button" name="button" onclick="buttonL2('2')"></button>
+        <button id="l2c3" class="colorButtons" type="button" name="button" onclick="buttonL2('3')"></button>
+        <button id="l2c4" class="colorButtons" type="button" name="button" onclick="buttonL2('4')"></button><br>
+        <p>Enemies color</p>
+        <button id="l3c1" class="colorButtons" type="button" name="button" onclick="buttonL3('1')"></button>
+        <button id="l3c2" class="colorButtons" type="button" name="button" onclick="buttonL3('2')"></button>
+        <button style="padding-bottom: 4px;" id="l3c3" class="colorButtons" type="button" name="button" onclick="buttonL3('3')"></button>
+        <button id="l3c4" class="colorButtons" type="button" name="button" onclick="buttonL3('4')"></button>
+     </div>
+  </body>
+</html>
