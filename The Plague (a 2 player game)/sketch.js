@@ -3,12 +3,12 @@
                                                                                                                */
 var xplayer1W = 293, yplayer1W = 225, xplayer2W = 509, yplayer2W = 225
 var movxplayer1W = 0, movyplayer1W = 0, movxplayer2W = 0, movyplayer2W = 0
-const playerSpeed = 2     //Just to easily change parameters
+const playerSpeed = 2
 var player1Elementals = [], player2Elementals = [], ghosts = []
 var score = 0, whoLost = 'both'
 var newWEposx,newWEposy,newFEposx,newFEposy
 var itsOver = false, initialize = true, pause = false
-var controls  //  (pic)
+var controls, canvas1  //  (pic)
 const ColorsP = [
    [20,20,200],
    [200,20,20],
@@ -30,6 +30,8 @@ function preLoad(){
 
 function setup() {
    createCanvas(800,450)
+   // canvas1 = document.getElementById("defaultCanvas0")
+   // document.getElementById("menu").appendChild(canvas1)
    createWE()
    createFE()
    controls = loadImage('controls.png')
