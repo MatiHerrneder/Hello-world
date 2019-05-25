@@ -241,7 +241,7 @@ function buttonL1(_n){
    document.getElementById("l1c" + 2).style.paddingBottom = ""
    document.getElementById("l1c" + 3).style.paddingBottom = ""
    document.getElementById("l1c" + 4).style.paddingBottom = ""
-   document.getElementById("l1c" + n).style.paddingBottom = "4px";
+   document.getElementById("l1c" + n).style.paddingBottom = "3px";
 
    colorP1 = ColorsP[n-1]
    colorP1e = ColorsE[n-1]
@@ -253,7 +253,7 @@ function buttonL2(_n){
    document.getElementById("l2c" + 2).style.paddingBottom = ""
    document.getElementById("l2c" + 3).style.paddingBottom = ""
    document.getElementById("l2c" + 4).style.paddingBottom = ""
-   document.getElementById("l2c" + n).style.paddingBottom = "4px";
+   document.getElementById("l2c" + n).style.paddingBottom = "3px";
 
    colorP2 = ColorsP[n-1]
    colorP2e = ColorsE[n-1]
@@ -265,7 +265,7 @@ function buttonL3(_n){
    document.getElementById("l3c" + 2).style.paddingBottom = ""
    document.getElementById("l3c" + 3).style.paddingBottom = ""
    document.getElementById("l3c" + 4).style.paddingBottom = ""
-   document.getElementById("l3c" + n).style.paddingBottom = "4px";
+   document.getElementById("l3c" + n).style.paddingBottom = "3px";
 
    colorE = ColorsE[n-1]
 }
