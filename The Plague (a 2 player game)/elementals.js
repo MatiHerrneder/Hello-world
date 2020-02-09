@@ -8,9 +8,9 @@ class Player1Elemental{
       let xmov, ymov, angle
 
       angleMode(DEGREES)
-      translate(this.x,this.y)
+      //translate(this.x,this.y)
       angle = atan2(yplayer2W-this.y, xplayer2W-this.x)
-      translate(-this.x,-this.y)
+      //translate(-this.x,-this.y)
 
       if(angle >= 0 && angle <= 90){
          ymov = map(angle,0,90,0,1)
@@ -84,11 +84,11 @@ class Player2Elemental{
       let xmov, ymov, angle
 
       angleMode(DEGREES)
-      translate(this.x,this.y)
+      // translate(this.x,this.y)
       angle = atan2(yplayer1W-this.y, xplayer1W-this.x)
-      translate(-this.x,-this.y)
+      // translate(-this.x,-this.y)
 
-      if(angle >= 0 && angle <= 90){
+      if(angle > 0 && angle <= 90){
          ymov = map(angle,0,90,0,1)
          xmov = 1 - ymov
          this.x += xmov
@@ -100,13 +100,13 @@ class Player2Elemental{
          this.x += -xmov
          this.y += ymov
       }
-      else if(angle <= 0 && angle >= -90){
+      else if(angle <= 0 && angle > -90){
          xmov = map(angle,-90,0,0,1)
          ymov = 1 - xmov
          this.x += xmov
          this.y += -ymov
       }
-      else if(angle < -90){
+      else if(angle <= -90){
          ymov = map(angle,-180,-90,0,1)
          xmov = 1 - ymov
          this.x += -xmov

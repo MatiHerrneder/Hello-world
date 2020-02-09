@@ -30,7 +30,7 @@ function createG(){
    let amountG
 
    amountG = random(-0.5,1.5)
-   for(let i=1; i<amountG; i++){
+   if(amountG > 1){
       do{
          newGposx = random(0+8, 800-8)    // - or + 8 because its half (a bit more) of the enemy's body, this way we avoid enemies generating right in the borders and straying there
          newGposy = random(0+8, 450-8)

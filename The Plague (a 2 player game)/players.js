@@ -1,6 +1,6 @@
 function Playerplayer1(){
 
-   if(movxplayer1W!=0 && movyplayer1W!=0){    //True value for division is 1.41
+   if(movxplayer1W!=0 && movyplayer1W!=0){    //True value for division is sqrt(2), for any player speed
       xplayer1W += (movxplayer1W / 1.25)
       yplayer1W += (movyplayer1W / 1.25)
    }
